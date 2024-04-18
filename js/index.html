@@ -8,7 +8,109 @@
     <title>Carniceria</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Beef</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"> <img src="/img/menu.svg" class="menu-icono" alt="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">Contacto</a></li>
+                    <li> <a href="#">Nuestros productos</a></li>
+                    <li> <a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+            <div> <!-- Comenzamos el carrito--> 
+                <ul>
+                    <li class="submenu">
+                        <img src="/img/cart.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead> <!-- Hilo --> 
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="Vacia-carrito" class="btn-2">Vaciar Carrito</a> <!-- Finalizamos el carrito --> .
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="header-content container">
+
+            <h1>Carniceria Rivas</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Optio enim blanditiis ex, at vitae necessitatibus ducimus repellendus ad similique,
+                perspiciatis, ab dolore ea non repellat vero minus aut consequuntur molestias.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis id quos 
+                aut sequi explicabo corrupti velit inventore ipsam aliquam pariatur expedita provident 
+                omnis beatae laboriosam voluptate, voluptatem, ratione quia?
+            </p>
+
+            <div class="botons">
+                <a href="#" class="btn-1">Más información</a>
+                <a href="#" class="btn-1">Menú</a>
+            </div>
+
+            <div class="socials-1">
+                <img src="/img/bxl-facebook-circle.svg" alt="">
+                <img src="/img/bxl-instagram.svg" alt="">
+                <img src="/img/bxl-twitter.svg" alt="">
+            </div>
+            
+            <a href="#">
+                <img class="arrow" src="/img/bx-down-arrow-alt.svg" alt="">
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <section class="recetas container">
+        <div class="recetas-1">
+            <h3>135 modos de preparar carne</h3>
+            <hr>  <!-- Linea que separa --> 
+            <p>Recetas</p>
+        </div>
+        <div class="recetas-2">
+            <h2>135 <br>recetas <br>de carne</h2> <!-- <br>= salto de linea --> 
+        </div>
+    </section>
+
+
+    <section class="platillos container" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="platillo">
+                        <h3>Albondigas de carne</h3>
+                        <p class="precio">$200</p>
+                        <img src="/img/albondigas-carne.webp" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quos laboriosam voluptatum aperiam voluptatem. Rem 
+                            exercitationem iste nobis laborum illum hic eum minus distinctio modi, 
+                            quo deserunt. Libero facere perferendis nemo!
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

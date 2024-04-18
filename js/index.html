@@ -1,121 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Carniceria</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">Beef</a>
-            <input type="checkbox" id="menu">
-            <label for="menu"> <img src="/img/menu.svg" class="menu-icono" alt="menu"></label>
-            <nav class="navbar">
-                <ul>
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="#">Contacto</a></li>
-                    <li> <a href="#">Nuestros productos</a></li>
-                    <li> <a href="#">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-            <div> <!-- Comenzamos el carrito--> 
-                <ul>
-                    <li class="submenu">
-                        <img src="/img/cart.svg" id="img-carrito" alt="">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead> <!-- Hilo --> 
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                            <a href="#" id="Vacia-carrito" class="btn-2">Vaciar Carrito</a> <!-- Finalizamos el carrito --> .
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      <div class="menu container">
+        <a href="#" class="logo">Beef</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="/img/menu.svg" class="menu-icono" alt="menu"
+        /></label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Nuestros productos</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+        <div>
+          <!-- Comenzamos el carrito-->
+          <ul>
+            <li class="submenu">
+              <img src="/img/cart.svg" id="img-carrito" alt="" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <!-- Hilo -->
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="Vacia-carrito" class="btn-2">Vaciar Carrito</a>
+                <!-- Finalizamos el carrito -->
+                .
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-content container">
+        <h1>Carniceria Rivas</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim
+          blanditiis ex, at vitae necessitatibus ducimus repellendus ad
+          similique, perspiciatis, ab dolore ea non repellat vero minus aut
+          consequuntur molestias. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Rerum veritatis id quos aut sequi explicabo corrupti
+          velit inventore ipsam aliquam pariatur expedita provident omnis beatae
+          laboriosam voluptate, voluptatem, ratione quia?
+        </p>
+
+        <div class="botons">
+          <a href="#" class="btn-1">Más información</a>
+          <a href="#" class="btn-1">Menú</a>
         </div>
 
-
-        <div class="header-content container">
-
-            <h1>Carniceria Rivas</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Optio enim blanditiis ex, at vitae necessitatibus ducimus repellendus ad similique,
-                perspiciatis, ab dolore ea non repellat vero minus aut consequuntur molestias.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis id quos 
-                aut sequi explicabo corrupti velit inventore ipsam aliquam pariatur expedita provident 
-                omnis beatae laboriosam voluptate, voluptatem, ratione quia?
-            </p>
-
-            <div class="botons">
-                <a href="#" class="btn-1">Más información</a>
-                <a href="#" class="btn-1">Menú</a>
-            </div>
-
-            <div class="socials-1">
-                <img src="/img/bxl-facebook-circle.svg" alt="">
-                <img src="/img/bxl-instagram.svg" alt="">
-                <img src="/img/bxl-twitter.svg" alt="">
-            </div>
-            
-            <a href="#">
-                <img class="arrow" src="/img/bx-down-arrow-alt.svg" alt="">
-            </a>
-
+        <div class="socials-1">
+          <img src="/img/bxl-facebook-circle.svg" alt="" />
+          <img src="/img/bxl-instagram.svg" alt="" />
+          <img src="/img/bxl-twitter.svg" alt="" />
         </div>
 
+        <a href="#">
+          <img class="arrow" src="/img/bx-down-arrow-alt.svg" alt="" />
+        </a>
+      </div>
     </header>
 
-
     <section class="recetas container">
-        <div class="recetas-1">
-            <h3>135 modos de preparar carne</h3>
-            <hr>  <!-- Linea que separa --> 
-            <p>Recetas</p>
-        </div>
-        <div class="recetas-2">
-            <h2>135 <br>recetas <br>de carne</h2> <!-- <br>= salto de linea --> 
-        </div>
+      <div class="recetas-1">
+        <h3>135 modos de preparar carne</h3>
+        <hr />
+        <!-- Linea que separa -->
+        <p>Recetas</p>
+      </div>
+      <div class="recetas-2">
+        <h2>135 <br />recetas <br />de carne</h2>
+        <!-- <br>= salto de linea -->
+      </div>
     </section>
-
 
     <section class="platillos container" id="lista">
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-
-                    <div class="platillo">
-                        <h3>Albondigas de carne</h3>
-                        <p class="precio">$200</p>
-                        <img src="/img/albondigas-carne.webp" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Quos laboriosam voluptatum aperiam voluptatem. Rem 
-                            exercitationem iste nobis laborum illum hic eum minus distinctio modi, 
-                            quo deserunt. Libero facere perferendis nemo!
-                        </p>
-                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
-                    </div>
-                </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Albondigas de carne</h3>
+              <p class="precio">$200</p>
+              <img src="/img/albondigas-carne.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="1"
+                >Agregar al Carrito</a
+              >
             </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Asado</h3>
+              <p class="precio">$200</p>
+              <img src="/img/asado.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="2"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Bife</h3>
+              <p class="precio">$200</p>
+              <img src="/img/bife.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="3"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Chorizo parrillero</h3>
+              <p class="precio">$200</p>
+              <img src="/img/chorizo-parrillero.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="4"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
+    <section class="recetas container">
+      <div class="recetas-2">
+        <h2>100 <br />tipos <br />de carne</h2>
+        <!-- <br>= salto de linea -->
+      </div>
+      <div class="recetas-1">
+        <h3>135 modos de pedir tu corte</h3>
+        <hr />
+        <!-- Linea que separa -->
+        <p>Kg</p>
+      </div>
+    </section>
+
+    <section class="platillos container" id="lista-2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Albondigas de carne</h3>
+              <p class="precio">$200</p>
+              <img src="/img/Peceto-Feteado.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="5"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Picada de nalga</h3>
+              <p class="precio">$200</p>
+              <img src="/img/Picada-de-nalga.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="6"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Pollo</h3>
+              <p class="precio">$200</p>
+              <img src="/img/pollo.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="7"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>Suprema de pollo</h3>
+              <p class="precio">$200</p>
+              <img src="/img/suprema-pollo.webp" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                laboriosam voluptatum aperiam voluptatem. Rem exercitationem
+                iste nobis laborum illum hic eum minus distinctio modi, quo
+                deserunt. Libero facere perferendis nemo!
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="8"
+                >Agregar al Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="recetas container">
+      <div class="recetas-1">
+        <hr />
+        <!-- Linea que separa -->
+        <p>Contacto</p>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="links">
+        <div class="link">
+          <h3>Redes</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam vel
+            obcaecati rerum optio inventore. Aperiam nisi mollitia atque 
+        </p>
+        <div class="socials-2">
+            <img src="/img/bxl-facebook-circle.svg" alt="">
+            <img src="/img/bxl-instagram.svg" alt="">
+            <img src="/img/bxl-twitter.svg" alt="">
+        </div>
+        </div>
+
+        <div class="link">
+            <h3>Lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
 
+        <div class="link">
+            <h3>Lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+
+
+        <div class="link">
+            <h3>Lorem</h3>
+            <form>
+                <input type="text" placeholder="Nombre" class="inp">
+                <input type="email" placeholder="E-mail" class="inp">
+                <textarea class="inp"></textarea>
+                <input class="btn-4" type="submit" value="Enviar">
+            </form>
+        </div>
+
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

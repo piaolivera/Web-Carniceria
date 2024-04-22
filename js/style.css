@@ -166,3 +166,306 @@ td{
     height: 20px;
     margin-bottom: 20px;
 }
+.arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+}
+
+.recetas{
+    display: flex;
+    padding: 120px 0;
+}
+
+.recetas-1{
+    width: 50%;
+}
+
+.recetas-1 h3{
+    font-size: 18px;
+    color: #DFDDE0;
+}
+
+.recetas-1 p{
+    color: #E45D34;
+}
+
+.recetas-1 hr{
+    margin: 10px 0;
+    border: 1px solid #312f32;
+}
+
+.recetas-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.recetas-2 h2{
+    font-size: 55px;
+    line-height: 55px;
+    color: #DFDDE0;
+}
+
+
+.platillos{
+    padding: 50px 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-prev {
+    color: #e45d34;
+}
+.swiper-button-next {
+    color: #e45d34;
+}
+
+
+.swiper-pagination-bullet{
+    background-color:#DFDDE0;
+    opacity: 1;
+    top: 50px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #E45D34;
+}
+
+.platillo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.platillo h3{
+    font-size: 16px;
+    color:#DFDDE0;
+    margin-bottom: 10px;
+}
+
+.precio{
+    font-size: 18px;
+    color: #e45d34 !important;
+}
+
+.platillo img{
+    width: 200px;
+}
+
+
+.platillo p{
+    font-size: 16px;
+    color: #DFDDE0;
+    margin-top: 15px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e85123;
+    color: #DFDDE0;
+    font-size: 14px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.btn-2:hover{
+    background-color: #c23b11;
+}
+
+
+.c1, .c2{
+    color: #8d7e7b !important;
+}
+
+.btn-3{
+    display: inline-block;
+    color: #DFDDE0;
+    padding: px 15;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: 1px solid #DFDDE0;
+}
+
+.btn-3:hover{
+    background-color: #e85123;
+    border: 1px solid #e85123;
+}
+
+.footer{
+    padding-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    width: 25%;
+}
+
+.link h3{
+    font-size: 20px;
+    color: #DFDDE0;
+    margin-bottom: 20px;
+}
+
+.link p{
+    color: #8d7e7b;
+    font-size: 14px;
+    margin: 0 50px 15px 0;
+}
+
+
+.link ul li a{
+    display: inline-block;
+    font-size: 16px;
+    color: #DFDDE0;
+    margin-bottom: 10px;
+}
+
+.social-2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.link form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp {
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-4{
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #61bc00;
+    border: 0;
+    color: #DFDDE0;
+}
+
+
+
+/*Lo hacemos responsive*/
+
+@media (max-width: 991px){
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{  /*para que se abra el menú*/
+        display: initial;
+    }
+
+    .header-content{
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 150px;
+    }
+
+    .header-content h1{
+        font-size: 40px;
+    }
+
+    .header-content p{
+        padding: 0;
+        margin-bottom: 40px;
+
+    }
+    .botons{
+        flex-direction: colum;
+        align-items: center;
+    }
+    .btn-1{
+        margin: 0 0 20px 0;
+    }
+
+    .social-1{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+
+    .recetas{
+        flex-direction: column;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .recetas-1{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .recetas-2{
+        width: 100%;
+    }
+   
+    .footer{
+        padding: 30px;
+
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .link{
+        width: 70%;
+    }
+
+    link p{
+        margin: 0 0 25px 0;
+    }
+
+    .social-2{
+        margin-bottom: 15px;
+    }
+}
